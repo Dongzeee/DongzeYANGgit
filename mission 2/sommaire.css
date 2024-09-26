@@ -1,0 +1,4 @@
+a {
+    color: inherit; /* Hérite de la couleur du texte parent */
+    text-decoration: none; /* Enlève le soulignement */
+}
