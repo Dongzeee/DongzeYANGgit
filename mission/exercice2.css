@@ -1,0 +1,74 @@
+html, body {
+    height: 100%; /* Définit la hauteur totale pour le document */
+    margin: 0; /* Supprime les marges par défaut */
+    position: relative; /* Positionner le corps */
+}
+
+header {
+    background: #dcdc63;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.block1, .block2, .block3 {
+    width: 30%; 
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 10%;
+    margin: 15px;
+    background-color: lightblue;
+    text-align: center; 
+    /* Ajout de la hauteur fixe pour uniformiser la taille des blocs */
+    height: 300px; /* Ajuste cette valeur selon tes besoins */
+}
+
+.rectangle {
+    width: 90%; 
+    height: 40px;
+    padding: 1px;
+    border: 2px solid white; 
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: lightblue;
+    text-align: center;
+    /* Pour centrer le texte verticalement */
+    line-height: 40px; /* Doit correspondre à la hauteur du rectangle */
+    margin: 0 auto; /* Centrer le rectangle horizontalement */
+}
+
+p {
+    margin-top: 10px; /* Ajoute un peu d'espace au-dessus du texte */
+}
+
+img {
+    width: 80%;
+    display: block; /* Assure que l'image soit un élément de bloc */
+    margin: 10px auto; /* Centrer l'image horizontalement avec une marge */
+}
+
+.footer {
+    text-align: center;
+    background-color: #fc7704;
+    padding: 10px;
+    position: absolute; /* Positionnement absolu */
+    bottom: 0; /* Colle le footer au bas de la page */
+    width: 100%; /* S'assure que le footer prenne toute la largeur */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
