@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <center>
+        <h1>Facture</h1>
+        <table id="factureTable">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Résultat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" placeholder="Article" class="article"></td>
+                    <td><input type="number" placeholder="Prix" class="prix" oninput="calculer()"></td>
+                    <td><input type="number" placeholder="Quantité" class="quantite" oninput="calculer()"></td>
+                    <td><input type="text" class="resultat" readonly></td>
+                </tr>
+                <!-- Ajoutez autant de lignes que nécessaire -->
+                <tr>
+                    <td><input type="text" placeholder="Article" class="article"></td>
+                    <td><input type="number" placeholder="Prix" class="prix" oninput="calculer()"></td>
+                    <td><input type="number" placeholder="Quantité" class="quantite" oninput="calculer()"></td>
+                    <td><input type="text" class="resultat" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Article" class="article"></td>
+                    <td><input type="number" placeholder="Prix" class="prix" oninput="calculer()"></td>
+                    <td><input type="number" placeholder="Quantité" class="quantite" oninput="calculer()"></td>
+                    <td><input type="text" class="resultat" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Article" class="article"></td>
+                    <td><input type="number" placeholder="Prix" class="prix" oninput="calculer()"></td>
+                    <td><input type="number" placeholder="Quantité" class="quantite" oninput="calculer()"></td>
+                    <td><input type="text" class="resultat" readonly></td>
+                </tr>
+                <!-- Ligne supplémentaire pour le total -->
+                <tr>
+                    <td colspan="3" style="text-align: right;"><strong>Total:</strong></td>
+                    <td><input type="text" id="total" readonly></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="calculer()">Résultat</button>
+        <button onclick="reinitialiser()">Réinitialiser</button>
+        <h3><a href="../index.html">Retour</a></h3>
+    </center>
+
+    <script src="index.js"></script>
+</body>
+</html>
