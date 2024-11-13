@@ -1,59 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facture</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Calcul de Facture</title>
 </head>
 <body>
-    <center>
-        <h1>Facture</h1>
-        <table id="factureTable">
-            <thead>
-                <tr>
-                    <th>Article</th>
-                    <th>Prix</th>
-                    <th>Quantité</th>
-                    <th>Résultat</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="text" placeholder="Article" class="article" ></td>
-                    <td><input type="number" placeholder="Prix" class="prix" name="a" id="a"oninput="calculer()"></td>
-                    <td><input type="number" placeholder="Quantité" class="quantite" oninput="calculer()"></td>
-                    <td><input type="text" class="resultat"name="c" id="c" readonly></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="Article" class="article"></td>
-                    <td><input type="number" placeholder="Prix" class="prix" oninput="calculer()"></td>
-                    <td><input type="number" placeholder="Quantité" class="quantite" oninput="calculer()"></td>
-                    <td><input type="text" class="resultat" readonly></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="Article" class="article"></td>
-                    <td><input type="number" placeholder="Prix" class="prix" oninput="calculer()"></td>
-                    <td><input type="number" placeholder="Quantité" class="quantite" oninput="calculer()"></td>
-                    <td><input type="text" class="resultat" readonly></td>
-                </tr>
-                <tr>
-                    <td><input type="text" placeholder="Article" class="article"></td>
-                    <td><input type="number" placeholder="Prix" class="prix" oninput="calculer()"></td>
-                    <td><input type="number" placeholder="Quantité" class="quantite" oninput="calculer()"></td>
-                    <td><input type="text" class="resultat" readonly></td>
-                </tr>
-                <tr>
-                    <td colspan="3" style="text-align: right;"><strong>Total:</strong></td>
-                    <td><input type="text" id="total" readonly></td>
-                </tr>
-            </tbody>
-        </table>
-        <button onclick="calculer()">Résultat</button>
-        <button onclick="reinitialiser()">Réinitialiser</button>
-        <h3><a href="../index.html">Retour</a></h3>
-    </center>
+  <div class="invoice-container">
+    <h1 class="invoice-header">Calcul de Facture</h1>
+    <table class="invoice-table">
+      <tr class="table-header">
+        <td><strong>Produit</strong></td>
+        <td><strong>Prix</strong></td>
+        <td><strong>Quantité</strong></td>
+        <td><strong>Total Ligne</strong></td>
+      </tr>
+      <tr class="item-row">
+        <td><input type="text" id="article1" class="input-text" placeholder="Article"></td>
+        <td><input type="number" id="prix1" class="input-number" placeholder="Prix"></td>
+        <td><input type="number" id="quantite1" class="input-number" placeholder="Quantité"></td>
+        <td><input type="text" id="result1" class="result-field" placeholder="Total" readonly></td>
+      </tr>
+      <tr class="item-row">
+        <td><input type="text" id="article2" class="input-text" placeholder="Article"></td>
+        <td><input type="number" id="prix2" class="input-number" placeholder="Prix"></td>
+        <td><input type="number" id="quantite2" class="input-number" placeholder="Quantité"></td>
+        <td><input type="text" id="result2" class="result-field" placeholder="Total" readonly></td>
+      </tr>
+      <tr class="item-row">
+        <td><input type="text" id="article3" class="input-text" placeholder="Article"></td>
+        <td><input type="number" id="prix3" class="input-number" placeholder="Prix"></td>
+        <td><input type="number" id="quantite3" class="input-number" placeholder="Quantité"></td>
+        <td><input type="text" id="result3" class="result-field" placeholder="Total" readonly></td>
+      </tr>
+      <tr class="item-row">
+        <td><input type="text" id="article4" class="input-text" placeholder="Article"></td>
+        <td><input type="number" id="prix4" class="input-number" placeholder="Prix"></td>
+        <td><input type="number" id="quantite4" class="input-number" placeholder="Quantité"></td>
+        <td><input type="text" id="result4" class="result-field" placeholder="Total" readonly></td>
+      </tr>
+      <tr class="total-row">
+        <td><strong>Montant Total</strong></td>
+        <td></td>
+        <td></td>
+        <td><input type="text" id="total" class="total-field" readonly></td>
+      </tr>
+    </table>
+    <div class="button-container">
+      <button onclick="reset()" class="reset-button">Réinitialiser</button>
+      <button onclick="calculer()" class="calculate-button">Calculer</button>
+    </div>
+    <a href="../index.html" class="back-link">Retour</a>
+  </div>
 
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
