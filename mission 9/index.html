@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM</title>
+    <link rel="stylesheet" href="qcm.css">
+</head>
+<body>
+    <h1>Quiz Pokemon !</h1>
+    <p>Veuillez sélectionner une seule réponse par question</p>
+
+    <form id="qcm-form">
+
+        <fieldset>
+            <legend>Depuis la 5eme génération comment réagissent les attaques Ténébre sur les pokémons Acier ?</legend>
+            <label><input type="radio" name="q1" value="a"> peu efficace</label><br>
+            <label><input type="radio" name="q1" value="b"> super efficace</label><br>
+            <label><input type="radio" name="q1" value="c"> neutre</label><br>
+            <label><input type="radio" name="q1" value="d"> non affecté</label><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Si un pokémon utilise Close Combat alors qu'il tient l'orbe vie de combien sera la puissance de l'attaque ?</legend>
+            <label><input type="radio" name="q2" value="a"> 110</label><br>
+            <label><input type="radio" name="q2" value="b"> 140</label><br>
+            <label><input type="radio" name="q2" value="c"> 200</label><br>
+            <label><input type="radio" name="q2" value="d"> 150</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comment sont appelés les "Shasseur de pokémon chromatique " en VO ?</legend>
+            <label><input type="radio" name="q3" value="a"> Shiny Hunter</label><br>
+            <label><input type="radio" name="q3" value="b"> Hunter Shiny</label><br>
+            <label><input type="radio" name="q3" value="c"> Shiny Shasseur</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Le boost de 1.50% généré quand une attaque est du meme type que le lanceur est dit :</legend>
+            <label><input type="radio" name="q4" value="a"> Stabée</label><br>
+            <label><input type="radio" name="q4" value="b"> Stratégique</label><br>
+            <label><input type="radio" name="q4" value="c"> Typée</label><br>
+            <label><input type="radio" name="q4" value="d"> Super Efficace</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>La MasterBall a 100% de chance de capturé un pokémon , vrai ou faux ?</legend>
+            <label><input type="radio" name="q5" value="a"> Vrai</label><br>
+            <label><input type="radio" name="q5" value="b"> Faux</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Le " Système de perfectionnement virtuel" appelé SPV augmente :</legend>
+            <label><input type="radio" name="q6" value="a"> Les stats directement</label><br>
+            <label><input type="radio" name="q6" value="b"> la puissance des attaques</label><br>
+            <label><input type="radio" name="q6" value="c"> les EVs</label><br>
+            <label><input type="radio" name="q6" value="d"> les IVs</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dans la seconde génération , les shinys ont étaient ajoutés a cette époque , a combien le pourcentage de rencontre s’élevait ?</legend>
+            <label><input type="radio" name="q7" value="a"> 1\64</label><br>
+            <label><input type="radio" name="q7" value="b"> 1\358</label><br>
+            <label><input type="radio" name="q7" value="c"> 1\560</label><br>
+            <label><input type="radio" name="q7" value="d"> 1\1084</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Quel est le pokémon le plus défensif du jeu (spécialement et physiquement ) ?</legend>
+            <label><input type="radio" name="q8" value="a"> Trioxydre</label><br>
+            <label><input type="radio" name="q8" value="b"> Caratroc</label><br>
+            <label><input type="radio" name="q8" value="c"> Arceus</label><br>
+            <label><input type="radio" name="q8" value="d"> Dracaufeu</label><br>
+            <label><input type="radio" name="q8" value="e"> Noacier</label><br>
+            <label><input type="radio" name="q8" value="f"> Rhinastoc</label><br>
+            <label><input type="radio" name="q8" value="g"> Méga Steelix</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Quel est le champion de type Eau a l’arène d'Ogoesse dans pokémon Nor et Blanc ?</legend>
+            <label><input type="radio" name="q9" value="a"> Noah</label><br>
+            <label><input type="radio" name="q9" value="b"> Rachid</label><br>
+            <label><input type="radio" name="q9" value="c"> Armando</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Combien y a t'il de pokémon officialisé a ce jour</legend>
+            <label><input type="radio" name="q10" value="a"> 1230</label><br>
+            <label><input type="radio" name="q10" value="b"> 151</label><br>
+            <label><input type="radio" name="q10" value="c"> 619</label><br>
+            <label><input type="radio" name="q10" value="d"> 620</label><br>
+            <label><input type="radio" name="q10" value="e"> 621</label><br>
+            <label><input type="radio" name="q10" value="f"> 985</label><br>
+            <label><input type="radio" name="q10" value="g"> 458</label><br>
+            <label><input type="radio" name="q10" value="h"> 1235</label><br>
+            <label><input type="radio" name="q10" value="i"> 456</label><br>
+            <label><input type="radio" name="q10" value="j"> 789</label><br>
+        </fieldset>
+
+
+        <br>
+        <button type="button" class="btn-correction" onclick="testqcm()">Correction</button>
+        <button type="button" class="btn-corrige" onclick="afficherCorrige()">Corrigé</button>
+        <button type="button" class="btn-effacer" onclick="effacerReponses()">Effacer</button>
+    </form>
+    </form>
+
+    <div id="score" class="score"></div>
+</div>
+    </form>
+
+    <script src="qcm.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* qcm.css */
+
+/* Style global pour le body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style pour le titre */
+h1,p {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Style du formulaire */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les fieldsets */
+fieldset {
+    border: 2px solid #2c3e50;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Style pour les légendes */
+legend {
+    font-size: 1.2em;
+    color: #34495e;
+}
+
+/* Style pour les labels des questions */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+/* Style pour les boutons */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Style pour le score */
+.score {
+    text-align: center;
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* Style de mise en page pour les boutons de soumission */
+form button[type="submit"] {
+    margin-right: 15px;
+}
+
+.correction {
+    color: green;
+}
+
