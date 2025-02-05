@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module de Facturation</title>
+    <link rel="stylesheet" href="facture.css">
+</head>
+<body>
+    <div class="facture-container">
+        <header>
+            <h1>Module de Facturation</h1>
+            <p>Date : <span id="dateFacture">01/02/2025</span></p>
+        </header>
+
+        <section class="facture-infos">
+            <div>
+                <h3>Destinataire</h3>
+                <p>Nom</p>
+                <p>Nom de la société</p>
+                <p>Adresse postale</p>
+                <p>Téléphone</p>
+                <p>Email</p>
+            </div>
+
+        </section>
+
+        <table id="facture">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire (€)</th>
+                    <th>Total (€)</th>
+                </tr>
+            </thead>
+            <tbody id="facture-body">
+                <tr class="ligne-modele">
+                    <td><input type="text" class="desc" placeholder="Article"></td>
+                    <td><input type="number" class="qte" value="1" min="1"></td>
+                    <td><input type="number" class="prix" value="0" min="0"></td>
+                    <td class="total-ligne">0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="buttons">
+            <button onclick="ajouterLigne()">Ajouter une ligne</button>
+            <button onclick="remplir()">Remplir automatiquement</button>
+            <button id="calculer" onclick="calculer()">Calculer</button>
+
+            <button onclick="annuler()">Annuler</button>
+        </div>
+
+        <div class="resultats">
+            <p>Sous-total : <span id="sousTotal">0.00</span> €</p>
+            <p>Remise : <input type="number" id="remise" value="10" min="0"> %</p>
+            <p>Sous-total après remise : <span id="sousTotalRemise">0.00</span> €</p>
+            <p>Taux d'imposition : <input type="number" id="taxe" value="10" min="0"> %</p>
+            <p>Taxe totale : <span id="taxeTotale">0.00</span> €</p>
+            <p>Expédition, manutention : <input type="number" id="frais" value="5" min="0"> €</p>
+            <p><strong>SOLDE DÛ : <span id="totalFinal" style="color: red;">0.00</span> €</strong></p>
+        </div>
+    </div>
+
+    <script src="facture.js"></script>
+</body>
+</html>

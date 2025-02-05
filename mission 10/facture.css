@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.facture-container {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.facture-header, .facture-infos, .facture-total {
+    display: block;
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #b2ebf2;
+}
+
+input[type="number"], input[type="text"] {
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: right;
+    
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #00897b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #00695c;
+}
+
+.resultats {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.resultats p {
+    margin: 5px 0;
+}
+
+.resultats strong {
+    font-size: 18px;
+    color: red;
+}
